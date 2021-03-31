@@ -1,0 +1,2335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="images/layout/favicon.png">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Slick CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet">
+    <!-- Animate CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+    <!-- Main CSS-->
+    <link href="./css/main.css" rel="stylesheet">
+    <title>Shopwise</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="loading-page">
+        <div class="loader">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-reload">
+        <div class="modal-dialog modal-dialog-centered mw-800">
+          <div class="modal-content border-0">
+            <div class="modal__reload"> 
+              <button class="modal__button" type="button" data-dismiss="modal" aria-label="close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+              <div class="row mr-0">
+                <div class="col-sm-5 p-0">
+                  <div class="modal__reload-img"><img src="images/modal-loading/popup_img.jpg" alt=""></div>
+                </div>
+                <div class="col-sm-7 p-0">
+                  <div class="modal__reload-title">
+                    <div class="reload-title__text">
+                      <h4>Subscribe and Get 25% Discount!</h4>
+                      <h5>Subscribe to the newsletter to receive updates about new products.</h5>
+                    </div>
+                    <div class="reload-title__button">
+                      <form method="post">
+                        <div class="form-group">
+                          <input class="form-control rounded-0" name="email" placeholder="Enter Your Email" type="Email">
+                        </div>
+                        <div class="form-group">
+                          <button class="form-group__button">Subscribe</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="reload-title__check">
+                      <div class="title__check-box">
+                        <input class="check-box__form" type="checkbox" name="checkbox">
+                        <label for="" type="checkbox"> <span>Don't show this popup again!</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Top nav-->
+      <div class="topnav">
+        <div class="container">
+          <div class="topnav__logo">
+            <div class="topnav__logo-icon">
+              <ul class="icon__list">
+                <li class="icon__list-item"><a href=""> <img src="images/header/eng.png" alt=""></a><span>English</span>
+                  <button class="button-bottom">
+                       <i class="fas fa-angle-down"></i></button>
+                </li>
+                <div class="icon__list-none">
+                  <li class="icon__list-item"><a href=""> <img src="images/header/eng.png" alt=""></a><span>English</span></li>
+                  <li class="icon__list-item"><a href=""><img src="images/header/fn.png" alt=""></a><span>Fance</span></li>
+                  <li class="icon__list-item"><a href=""><img src="images/header/us.png" alt=""></a><span>United States   </span></li>
+                </div>
+              </ul>
+              <ul class="icon__curency">
+                <li class="icon__curency-item mright-16"><span>USD</span>
+                  <button class="button-curency"><i class="fas fa-angle-down"></i></button>
+                </li>
+                <div class="icon__curency-none">
+                  <li class="icon__curency-item"><span>USD</span></li>
+                  <li class="icon__curency-item"><span>EUR</span></li>
+                  <li class="icon__curency-item"><span>GBR</span></li>
+                </div>
+              </ul>
+              <div class="icon__phone"><i class="fas fa-mobile-alt"></i><span>123-456-7890</span></div>
+            </div>
+            <div class="topnav__logo-account">
+              <div class="logo-account__compare"><a href=""><i class="fas fa-random"></i> Compare</a></div>
+              <div class="logo-account__wishlist"><a href=""><i class="far fa-heart"></i>Wishlist</a></div>
+              <div class="logo-account__user"><a href=""><i class="far fa-user"></i>Login</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header"> 
+        <div class="container"> 
+          <div class="header__menu d_flex"><a class="header__menu-logo" href="#"><img class="logo__light" src="./images/layout/logo_light.png"><img class="logo__dark" src="./images/layout/logo_dark.png"></a>
+            <div class="header__menu-button">
+              <div class="bar-1"></div>
+              <div class="bar-2"></div>
+              <div class="bar-3">       </div>
+            </div>
+            <div class="header__menu-list">
+              <ul class="list__items">
+                <li class="dropdown">
+                  <div class="dropdown__toggle"><a class="text-up" href="#">Home</a><i class="fas fa-angle-down"></i></div>
+                  <div class="dropdown__menu" id="home">
+                    <ul>
+                      <li><a class="dropdown__menu-item color-red" href="#">Fashion 1</a></li>
+                      <li><a class="dropdown__menu-item" href="#">Fashion 2</a></li>
+                      <li><a class="dropdown__menu-item" href="#">Furniture 1</a></li>
+                      <li><a class="dropdown__menu-item" href="#">Furniture 2</a></li>
+                      <li><a class="dropdown__menu-item" href="#">Electronics 1</a></li>
+                      <li><a class="dropdown__menu-item" href="#">Electronics 2</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <div class="dropdown__toggle"><a class="text-up " href="#">Pages</a><i class="fas fa-angle-down"></i></div>
+                  <div class="dropdown__menu" id="pages">
+                    <ul>
+                      <li><a class="dropdown__menu-item" href="#">About Us</a></li>
+                      <li><a class="dropdown__menu-item" href="#">Contact Us</a></li>
+                      <li><a class="dropdown__menu-item" href="#">Faq</a></li>
+                      <li><a class="dropdown__menu-item" href="#">404 Error Page</a></li>
+                      <li><a class="dropdown__menu-item" href="#">Login</a></li>
+                      <li><a class="dropdown__menu-item" href="#">Register</a></li>
+                      <li> <a class="dropdown__menu-item" href="#">Terms And Conditions</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown dropdown__mega">
+                  <div class="dropdown__toggle"><a class="text-up " href="#">Products</a><i class="fas fa-angle-down"></i></div>
+                  <div class="dropdown__menu" id="products">
+                    <ul class="menu__mega row">
+                      <li class="menu__mega-link col-lg-3">
+                        <ul>
+                          <li class="dropdown-header">Woman's</li>
+                          <li><a class="dropdown-item" href="#">Vestibulum Sed</a></li>
+                          <li><a class="dropdown-item" href="#">Donec Porttitor</a></li>
+                          <li><a class="dropdown-item" href="#">Donec Vitae Facilisis</a></li>
+                          <li><a class="dropdown-item" href="#">Vivamus In Tortor</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu__mega-link col-lg-3">
+                        <ul>
+                          <li class="dropdown-header">Men's</li>
+                          <li><a class="dropdown-item" href="#">Donec Vitae Ante Ante</a></li>
+                          <li><a class="dropdown-item" href="#">Etiam Ac Rutrum</a></li>
+                          <li><a class="dropdown-item" href="#">Quisque Condimentum</a></li>
+                          <li><a class="dropdown-item" href="#">Curabitur Laoreet</a></li>
+                          <li><a class="dropdown-item" href="#">Vivamus In Tortor</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu__mega-link col-lg-3">
+                        <ul>
+                          <li class="dropdown-header">Kid's</li>
+                          <li><a class="dropdown-item" href="#">Donec Vitae Facilisis</a></li>
+                          <li><a class="dropdown-item" href="#">Quisque Condimentum</a></li>
+                          <li><a class="dropdown-item" href="#">Etiam Ac Rutrum</a></li>
+                          <li><a class="dropdown-item" href="#">Donec Vitae Ante Ante</a></li>
+                          <li><a class="dropdown-item" href="#">Donec Porttitor</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-lg-3">
+                        <ul>
+                          <li class="dropdown-header">Accessories</li>
+                          <li><a class="dropdown-item" href="#">Donec Vitae Facilisis</a></li>
+                          <li><a class="dropdown-item" href="#">Quisque Condimentum</a></li>
+                          <li><a class="dropdown-item" href="#">Etiam Ac Rutrum</a></li>
+                          <li><a class="dropdown-item" href="#">Donec Vitae Ante Ante</a></li>
+                          <li><a class="dropdown-item" href="#">Donec Porttitor</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="dropdown__banner row">
+                      <div class="col-sm-4">
+                        <div class="dropdown__banner-header"></div><img src="./images/layout/menu_banner1.jpg" alt="">
+                        <div class="banner__info">
+                          <h6>10% Off</h6>
+                          <h4>New Arrival</h4><a href="#">Shop Now </a>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="dropdown__banner-header"></div><img src="./images/layout/menu_banner2.jpg" alt="">
+                        <div class="banner__info">
+                          <h6>15% Off</h6>
+                          <h4>Men's Fashion</h4><a href="#">Shop Now</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="dropdown__banner-header"></div><img src="./images/layout/menu_banner3.jpg" alt="">
+                        <div class="banner__info">
+                          <h6>15% Off</h6>
+                          <h4>Men's Fashion</h4><a href="#">Shop Now               </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <div class="dropdown__toggle"><a class="text-up" href="#">Blog</a><i class="fas fa-angle-down"></i></div>
+                  <div class="dropdown__menu" id="blog">
+                    <ul>
+                      <li>
+                        <div class="dropdown__menu-item"><a href="#">Grids </a><i class="fas fa-angle-down"></i></div>
+                        <div class="dropdown__menu-link">
+                          <ul>
+                            <li><a class="dropdown__menu-item" href="#">3 Columns</a></li>
+                            <li><a class="dropdown__menu-item" href="#">4 Colums</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Left Sidebar</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Right Sidebar</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Standard Left Sidebar</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown__menu-item"><a href="#">Masonry</a><i class="fas fa-angle-down">  </i></div>
+                        <div class="dropdown__menu-link">
+                          <ul>
+                            <li><a class="dropdown__menu-item" href="#">3 Columns</a></li>
+                            <li><a class="dropdown__menu-item" href="#">4 Columns</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Left Sidebar</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Right Sidebar  </a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown__menu-item"><a href="#">Single Post</a><i class="fas fa-angle-down"></i></div>
+                        <div class="dropdown__menu-link">
+                          <ul>
+                            <li><a class="dropdown__menu-item" href="#">Default</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Left Sidebar</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Slider Post</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Video Post</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Audio Post</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown__menu-item"><a href="#">List</a><i class="fas fa-angle-down"></i></div>
+                        <div class="dropdown__menu-link">
+                          <ul>
+                            <li><a class="dropdown__menu-item" href="#">Left Sidebar</a></li>
+                            <li><a class="dropdown__menu-item" href="#">Right Sidebar</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown dropdown__mega">
+                  <div class="dropdown__toggle"><a class="text-up" href="#">Shop</a><i class="fas fa-angle-down"></i></div>
+                  <div class="dropdown__menu" id="shop">
+                    <ul class="menu__mega d-lg-flex">
+                      <li class="menu__mega-link col-lg-9 border-0">
+                        <ul class="d-lg-flex">
+                          <li class="menu__mega-link col-lg-4">
+                            <ul>
+                              <li class="dropdown-header text-up">Shop page Layout</li>
+                              <li><a class="dropdown-item" href="#">Shop List View</a></li>
+                              <li><a class="dropdown-item" href="#">Shop List Left Sidebar</a></li>
+                              <li><a class="dropdown-item" href="#">Shop List Right Sidebar</a></li>
+                              <li><a class="dropdown-item" href="#">Left Sidebar</a></li>
+                              <li><a class="dropdown-item" href="#">Right Sidebar</a></li>
+                              <li><a class="dropdown-item" href="#">Shop Load More</a></li>
+                            </ul>
+                          </li>
+                          <li class="menu__mega-link col-lg-4">
+                            <ul>
+                              <li class="dropdown-header text-up">Other Pages</li>
+                              <li><a class="dropdown-item" href="#">Cart</a></li>
+                              <li><a class="dropdown-item" href="#">Checkout</a></li>
+                              <li><a class="dropdown-item" href="#">My Account</a></li>
+                              <li><a class="dropdown-item" href="#">Whishlist</a></li>
+                              <li><a class="dropdown-item" href="#">Compare</a></li>
+                              <li><a class="dropdown-item" href="#">Order Completed </a></li>
+                            </ul>
+                          </li>
+                          <li class="menu__mega-link col-lg-4">
+                            <ul>
+                              <li class="dropdown-header text-up">Product Pages</li>
+                              <li><a class="dropdown-item" href="#">Default</a></li>
+                              <li><a class="dropdown-item" href="#">Left Sidebar</a></li>
+                              <li><a class="dropdown-item" href="#">Right Sidebar</a></li>
+                              <li><a class="dropdown-item" href="#">Thumbnails Left                                   </a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu__mega-link col-lg-3">
+                        <div class="dropdown__banner-content">
+                          <div class="banner__img"><img src="./images/layout/shop_banner.jpg" alt="">
+                            <div class="shop__content">
+                              <h5 class="text-up">New Collection</h5>
+                              <h3 class="text-up">Sale 30% Off</h3><a class="btn text-up" href="#">Shop Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <div class="dropdown__toggle"><a class="text-up" href="#">Contact US </a></div>
+                </li>
+              </ul>
+            </div>
+            <ul class="header__menu-nav">
+              <li><a class="nav-link search_trigger" href="#"><i class="fas fa-search"></i></a>
+                <div class="search_wrap"><span class="close-search">
+                    <ion-icon name="close-outline"></ion-icon></span>
+                  <form>
+                    <input class="form-control" id="search_input" type="text" placeholder="Search">
+                    <button class="search_icon" type="submit">
+                      <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                  </form>
+                </div>
+                <div class="search_overlay"></div>
+                <div class="search_overlay"></div>
+                <div class="search_overlay"></div>
+              </li>
+              <li class="nav__cart"><a class="nav__cart-trigger"><i class="fas fa-shopping-cart"></i><span class="card-cout">2</span>
+                  <div class="nav__card-box"></div></a>
+                <div class="nav__cart-box">
+                  <ul class="cart__list">
+                    <li><a class="cart__list-remove"><i class="fas fa-times"></i></a><a class="cart__list-img"><img src="./images/layout/cart_thamb1.jpg"></a>
+                      <div class="cart__list-quantity">
+                        <p>Variable Product 001 </p><span>1 x $78.00</span>
+                      </div>
+                    </li>
+                    <li><a class="cart__list-remove"><i class="fas fa-times"></i></a><a class="cart__list-img"><img src="./images/layout/cart_thamb2.jpg"></a>
+                      <div class="cart__list-quantity">
+                        <p>Ornare Sed Consequat</p><span>1 x $81.00</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="cart__footer">
+                    <div class="cart__footer-total"><strong>Subtotal:   </strong><span>$159.00</span></div>
+                    <div class="cart__footer-button"><a class="view-cart" href="#">View Cart</a><a class="checkout" href="#"> Checkout</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exclusive">
+        <div class="container">
+          <div class="exclusive__title">
+            <h2>Exclusive Products</h2>
+          </div>
+          <div class="exclusive__tab">
+            <ul class="nav nav-tabs justify-center" role="tablist">
+              <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">New Arival</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Best Sellers</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Featured</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Special Offer</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                <div class="row shop-container">
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img1.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$45.00</span>
+                          <del>$55.25</del>
+                          <div class="info__price-sale"><span>35% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:80%"></div>
+                          </div><span class="rating_num">(21)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img2.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#">Add To Cart<i class="fas fa-shopping-cart"> </i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash">New</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img3.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"><i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$68.00</span>
+                          <del>$99.00</del>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:87%"></div>
+                          </div><span class="rating_num">(25)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#7C502F" style="background-color: rgb(124, 80, 47);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img4.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$69.00</span>
+                          <del>$89.00</del>
+                          <div class="info__price-sale"><span>20% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(22)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img5.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$45.00</span>
+                          <del>$50.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash bg-danger">HOT</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img6.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"><i class="fas fa-shopping-cart"></i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""><i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash bg-success">SALE</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img7.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img8.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"></i>Add To Cart </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tabs-2" role="tabpanel">
+                <div class="row shop-container">
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img9.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash bg-danger">HOT</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img10.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"></i>Add To Cart </a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img11.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"></i>Add To Cart </a></li>
+                            <li><a href="" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart">                   </i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash bg-success">SALE</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img12.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"><i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img1.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$45.00</span>
+                          <del>$55.25</del>
+                          <div class="info__price-sale"><span>35% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:80%"></div>
+                          </div><span class="rating_num">(21)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img2.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#">Add To Cart<i class="fas fa-shopping-cart"> </i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash">New</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img3.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"><i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$68.00</span>
+                          <del>$99.00</del>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:87%"></div>
+                          </div><span class="rating_num">(25)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#7C502F" style="background-color: rgb(124, 80, 47);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img4.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$69.00</span>
+                          <del>$89.00</del>
+                          <div class="info__price-sale"><span>20% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(22)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tabs-3" role="tabpanel">
+                <div class="row shop-container">
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img1.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$45.00</span>
+                          <del>$55.25</del>
+                          <div class="info__price-sale"><span>35% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:80%"></div>
+                          </div><span class="rating_num">(21)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img2.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#">Add To Cart<i class="fas fa-shopping-cart"> </i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash">New</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img3.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"><i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$68.00</span>
+                          <del>$99.00</del>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:87%"></div>
+                          </div><span class="rating_num">(25)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#7C502F" style="background-color: rgb(124, 80, 47);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img4.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$69.00</span>
+                          <del>$89.00</del>
+                          <div class="info__price-sale"><span>20% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(22)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img11.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"></i>Add To Cart </a></li>
+                            <li><a href="" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart">                   </i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash bg-success">SALE</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img12.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"><i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img2.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#">Add To Cart<i class="fas fa-shopping-cart"> </i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash">New</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img3.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"><i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$68.00</span>
+                          <del>$99.00</del>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:87%"></div>
+                          </div><span class="rating_num">(25)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#7C502F" style="background-color: rgb(124, 80, 47);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tabs-4" role="tabpanel">
+                <div class="row shop-container">
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img2.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#">Add To Cart<i class="fas fa-shopping-cart"> </i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash">New</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img3.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"><i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$68.00</span>
+                          <del>$99.00</del>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:87%"></div>
+                          </div><span class="rating_num">(25)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#7C502F" style="background-color: rgb(124, 80, 47);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img1.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$45.00</span>
+                          <del>$55.25</del>
+                          <div class="info__price-sale"><span>35% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:80%"></div>
+                          </div><span class="rating_num">(21)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img2.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#">Add To Cart<i class="fas fa-shopping-cart"> </i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product"><span class="pr__flash">New</span>
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img3.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"><i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$68.00</span>
+                          <del>$99.00</del>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:87%"></div>
+                          </div><span class="rating_num">(25)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#7C502F" style="background-color: rgb(124, 80, 47);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img4.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$69.00</span>
+                          <del>$89.00</del>
+                          <div class="info__price-sale"><span>20% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(22)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img2.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#">Add To Cart<i class="fas fa-shopping-cart"> </i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$55.00</span>
+                          <del>$95.00</del>
+                          <div class="info__price-sale"><span>25% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:68%"></div>
+                          </div><span class="rating_num">(15)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart </a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-6"> 
+                    <div class="shop__product">
+                      <div class="shop__product-img"><a href=""><img src="images/product-img/product_img1.jpg" alt=""></a>
+                        <div class="img__action">
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="shop__product-info">
+                        <h6 class="info__title">Blue Dress For Woman</h6>
+                        <div class="info__price"> <span class="price">$45.00</span>
+                          <del>$55.25</del>
+                          <div class="info__price-sale"><span>35% Off</span></div>
+                        </div>
+                        <div class="info__rating">
+                          <div class="rating">
+                            <div class="info__rating-rate" style="width:80%"></div>
+                          </div><span class="rating_num">(21)</span>
+                        </div>
+                        <div class="info__desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="info__switch">  
+                          <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                        </div>
+                        <div class="info__list"> 
+                          <ul class="img__action-list pr_action_btn">
+                            <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                            <li><a href=""><i class="far fa-heart"></i>Add To Cart</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner__single">
+        <div class="container">
+          <div class="row align-items-center flex-row-reverse">
+            <div class="col-md-6 offset-md-1">
+              <div class="banner__single-text">
+                <div class="heading__single"><span>New season trends!</span>
+                  <h2>Best Summer Collection</h2>
+                </div>
+                <h5>Sale Get up to 50% Off</h5><a class="button_shop" href="#">Shop Now</a>
+              </div>
+            </div>
+            <div class="col-md-5 text-center banner__single-img"><img src="images/home/banner_single/tranding_img.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="featured__product">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="heading-s1 text-center">
+                <h2>Featured Products</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel owl-theme featured__product-style">
+                      <div class="shop__product"><span class="pr__flash bg-danger" style="display:none">new</span>
+                        <div class="shop__product-img"><a href=""><img src="images/home/banner_single/product_img1.jpg" alt=""></a>
+                          <div class="img__action">
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="shop__product-info">
+                          <h6 class="info__title">Woman Full Sliv Dress</h6>
+                          <div class="info__price"> <span class="price">68.00$</span>
+                            <del>$55.25</del>
+                            <div class="info__price-sale"><span>35% Off</span></div>
+                          </div>
+                          <div class="info__rating">
+                            <div class="rating">
+                              <div class="info__rating-rate" style="width:86%"></div>
+                            </div><span class="rating_num">(21)</span>
+                          </div>
+                          <div class="info__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                          </div>
+                          <div class="info__switch">  
+                            <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                          </div>
+                          <div class="info__list"> 
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                              <li><a href=""><i class="fas fa-random"></i></a></li>
+                              <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shop__product"><span class="pr__flash bg-danger" style="display:none">new</span>
+                        <div class="shop__product-img"><a href=""><img src="images/home/banner_single/product_img2.jpg" alt=""></a>
+                          <div class="img__action">
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="shop__product-info">
+                          <h6 class="info__title">Woman Full Sliv Dress</h6>
+                          <div class="info__price"> <span class="price">68.00$</span>
+                            <del>$55.25</del>
+                            <div class="info__price-sale"><span>35% Off</span></div>
+                          </div>
+                          <div class="info__rating">
+                            <div class="rating">
+                              <div class="info__rating-rate" style="width:86%"></div>
+                            </div><span class="rating_num">(21)</span>
+                          </div>
+                          <div class="info__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                          </div>
+                          <div class="info__switch">  
+                            <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                          </div>
+                          <div class="info__list"> 
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                              <li><a href=""><i class="fas fa-random"></i></a></li>
+                              <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shop__product"><span class="pr__flash bg-danger" style="display:none">new</span>
+                        <div class="shop__product-img"><a href=""><img src="images/home/banner_single/product_img3.jpg" alt=""></a>
+                          <div class="img__action">
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="shop__product-info">
+                          <h6 class="info__title">Woman Full Sliv Dress</h6>
+                          <div class="info__price"> <span class="price">68.00$</span>
+                            <del>$55.25</del>
+                            <div class="info__price-sale"><span>35% Off</span></div>
+                          </div>
+                          <div class="info__rating">
+                            <div class="rating">
+                              <div class="info__rating-rate" style="width:86%"></div>
+                            </div><span class="rating_num">(21)</span>
+                          </div>
+                          <div class="info__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                          </div>
+                          <div class="info__switch">  
+                            <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                          </div>
+                          <div class="info__list"> 
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                              <li><a href=""><i class="fas fa-random"></i></a></li>
+                              <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shop__product"><span class="pr__flash bg-danger" style="display:none">new</span>
+                        <div class="shop__product-img"><a href=""><img src="images/home/banner_single/product_img4.jpg" alt=""></a>
+                          <div class="img__action">
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="shop__product-info">
+                          <h6 class="info__title">Woman Full Sliv Dress</h6>
+                          <div class="info__price"> <span class="price">68.00$</span>
+                            <del>$55.25</del>
+                            <div class="info__price-sale"><span>35% Off</span></div>
+                          </div>
+                          <div class="info__rating">
+                            <div class="rating">
+                              <div class="info__rating-rate" style="width:86%"></div>
+                            </div><span class="rating_num">(21)</span>
+                          </div>
+                          <div class="info__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                          </div>
+                          <div class="info__switch">  
+                            <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                          </div>
+                          <div class="info__list"> 
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                              <li><a href=""><i class="fas fa-random"></i></a></li>
+                              <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shop__product"><span class="pr__flash bg-danger" style="display:none">new</span>
+                        <div class="shop__product-img"><a href=""><img src="images/home/banner_single/product_img5.jpg" alt=""></a>
+                          <div class="img__action">
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href="#"> <i class="fas fa-shopping-cart"> </i><span>Add To Cart</span></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#Compare"><i class="fas fa-random"></i></a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#modal__product-1"><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="shop__product-info">
+                          <h6 class="info__title">Woman Full Sliv Dress</h6>
+                          <div class="info__price"> <span class="price">68.00$</span>
+                            <del>$55.25</del>
+                            <div class="info__price-sale"><span>35% Off</span></div>
+                          </div>
+                          <div class="info__rating">
+                            <div class="rating">
+                              <div class="info__rating-rate" style="width:86%"></div>
+                            </div><span class="rating_num">(21)</span>
+                          </div>
+                          <div class="info__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                          </div>
+                          <div class="info__switch">  
+                            <div class="info__switch-color"><span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span><span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span><span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span></div>
+                          </div>
+                          <div class="info__list"> 
+                            <ul class="img__action-list pr_action_btn">
+                              <li class="add-to-cart"><a href=""> <i class="fas fa-shopping-cart"> </i>Add To Cart</a></li>
+                              <li><a href=""><i class="fas fa-random"></i></a></li>
+                              <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                              <li><a href=""><i class="far fa-heart"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial section bg_redon">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="heading-s1 text-center">
+                <h2>Our Client Say!</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <div class="testimonial__wrap testimonial__style1 owl-carousel owl-them">
+                <div class="testimonial__box">
+                  <div class="testimonial__box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</p>
+                  </div>
+                  <div class="testimonial__box-author">
+                    <div class="author__img"><img src="images/our-client/user_img1.jpg" alt=""></div>
+                    <div class="author__name">
+                      <h6>Alden Smith</h6><span>Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial__box">
+                  <div class="testimonial__box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</p>
+                  </div>
+                  <div class="testimonial__box-author">
+                    <div class="author__img"><img src="images/our-client/user_img2.jpg" alt=""></div>
+                    <div class="author__name">
+                      <h6>Alden Smith</h6><span>Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial__box">
+                  <div class="testimonial__box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</p>
+                  </div>
+                  <div class="testimonial__box-author">
+                    <div class="author__img"><img src="images/our-client/user_img3.jpg" alt=""></div>
+                    <div class="author__name">
+                      <h6>Alden Smith</h6><span>Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial__box">
+                  <div class="testimonial__box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</p>
+                  </div>
+                  <div class="testimonial__box-author">
+                    <div class="author__img"><img src="images/our-client/user_img4.jpg" alt=""></div>
+                    <div class="author__name">
+                      <h6>Alden Smith</h6><span>Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info section pb-70"> 
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-lg-4">
+              <div class="info__box box-style1">
+                <div class="info__box-icon"><i class="fal fa-shipping-fast"></i></div>
+                <div class="info__box-content">
+                  <h5>Free Delivery</h5>
+                  <p>If you are going to use of Lorem, you need to be sure there anything</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info__box box-style1">
+                <div class="info__box-icon"><i class="fal fa-hand-holding-usd"></i></div>
+                <div class="info__box-content">
+                  <h5>30 Day Return</h5>
+                  <p>If you are going to use of Lorem, you need to be sure there anything</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info__box box-style1">
+                <div class="info__box-icon"><i class="fal fa-user-astronaut"></i></div>
+                <div class="info__box-content">
+                  <h5>27/4 Support</h5>
+                  <p>If you are going to use of Lorem, you need to be sure there anything</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subcribe">
+        <div class="container">
+          <div class="subcribe__box">
+            <div class="box-title">
+              <h3 class="box-title__text">Subscribe Our Newsletter</h3>
+            </div>
+            <div class="box-form">
+              <div class="box-form__title"> 
+                <input type="text" placeholder="Enter Email Address">
+                <div class="button">
+                  <div class="button__fullbox"> Subscribe</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="widget">
+                  <div class="widget__logo"><a href="#"> <img src="/images/layout/logo_light.png" alt=""></a></div>
+                  <p>If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
+                </div>
+                <div class="widget">
+                  <div class="social-icon">
+                    <div class="social-icon__fullbox"> <a href="#"><i class="fab fa-facebook-f"> </i></a></div>
+                    <div class="social-icon__fullbox"> <a href="#"><i class="fab fa-twitter"></i></a></div>
+                    <div class="social-icon__fullbox"> <a href="#"><i class="fab fa-google"></i></a></div>
+                    <div class="social-icon__fullbox"> <a href="#"><i class="fab fa-youtube"></i></a></div>
+                    <div class="social-icon__fullbox"> <a href="#"><i class="fab fa-instagram">             </i></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="widget">
+                  <h6 class="widget__title">Useful Links</h6>
+                  <ul class="widget__text"> 
+                    <li class="link-text"> <a href="#">About Us</a></li>
+                    <li class="link-text"> <a href="#">FAQ</a></li>
+                    <li class="link-text"> <a href="#">Location</a></li>
+                    <li class="link-text"> <a href="#">Affiliates</a></li>
+                    <li class="link-text"> <a href="#">Contact     </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="widget">
+                  <h6 class="widget__title">Category</h6>
+                  <ul class="widget__text"> 
+                    <li class="link-text"> <a href="#">Men</a></li>
+                    <li class="link-text"> <a href="#">Woman</a></li>
+                    <li class="link-text"> <a href="#">Kids</a></li>
+                    <li class="link-text"> <a href="#">Best Saller</a></li>
+                    <li class="link-text"> <a href="#">New Arrivals       </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="widget">
+                  <h6 class="widget__title">My Account</h6>
+                  <ul class="widget__text"> 
+                    <li class="link-text"> <a href="#">My Account</a></li>
+                    <li class="link-text"> <a href="#">Discount</a></li>
+                    <li class="link-text"> <a href="#">Returns</a></li>
+                    <li class="link-text"> <a href="#">Orders History</a></li>
+                    <li class="link-text"> <a href="#">Order Tracking      </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="widget">
+                  <h6 class="widget__title"> Contact Info</h6>
+                  <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i>
+                      <p>123 Street, Old Trafford, New South London , UK  </p>
+                    </li>
+                    <li><i class="far fa-envelope"></i><a href="mailto:info@sitename.com">info@sitename.com</a></li>
+                    <li><i class="fas fa-mobile-alt"></i>
+                      <p>+ 457 789 789 65   </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p>© 2020 All Rights Reserved by Bestwebcreator</p>
+              </div>
+              <div class="col-md-6">
+                <ul class="bottom-list">
+                  <li class="bottom-list__item"> <a href="#"><img src="/images/layout/visa.png" alt=""></a></li>
+                  <li class="bottom-list__item"> <a href="#"><img src="/images/layout/discover.png" alt=""></a></li>
+                  <li class="bottom-list__item"> <a href="#"><img src="/images/layout/master_card.png" alt=""></a></li>
+                  <li class="bottom-list__item"> <a href="#"><img src="/images/layout/paypal.png" alt=""></a></li>
+                  <li class="bottom-list__item"> <a href="#"><img src="/images/layout/amarican_express.png" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="fas fa-chevron-up"></i></a></div>
+      <div class="modal fade" id="modal__product-1">
+        <div class="modal-dialog modal-dialog-centered modal__product" roler="document">
+          <div class="modal__content">
+            <button class="close btn__close-modal" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="zoom-area"><img id="zoompro" src="./images/modal-slider/product_img1.jpg" alt="zoom" data-zoom-image="./images/modal-slider/product_img1.jpg">
+                      <div class="mt-30" id="gallery"><a href="#" data-image="./images/modal-slider/product_img1.jpg" data-zoom-image="./images/modal-slider/product_zoom_img1.jpg"><img src="./images/modal-slider/product_img1.jpg" alt="zoom"></a><a href="#" data-image="./images/modal-slider/product_img2.jpg" data-zoom-image="./images/modal-slider/product_zoom_img2.jpg"><img src="./images/modal-slider/product_img2.jpg" alt="zoom"></a><a href="#" data-image="./images/modal-slider/product_img3.jpg" data-zoom-image="./images/modal-slider/product_zoom_img3.jpg"><img src="./images/modal-slider/product_img3.jpg" alt="zoom"></a><a href="#" data-image="./images/modal-slider/product_img4.jpg" data-zoom-image="./images/modal-slider/product_zoom_img4.jpg"><img src="./images/modal-slider/product_img4.jpg" alt="zoom"></a></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 modal__product-view">
+                    <div class="product__detail">
+                      <div class="product__detail-title">
+                        <h4 class="product-title"> <a href="#">Blue Dress For Woman</a></h4>
+                        <div class="product-price"><span class="price">$45.00</span>
+                          <del>$55.25</del>
+                          <div class="on-sale"><span>35% Off  </span></div>
+                        </div>
+                        <div class="product-rating">
+                          <div class="rating">
+                            <div class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="far fa-star"></i></div>
+                          </div><span class="rating-num">(21)  </span>
+                        </div>
+                        <div class="product-desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                        </div>
+                        <div class="product-info">
+                          <ul>
+                            <li><a><i class="fas fa-shield-alt"> </i>
+                                <p>1 Year AL Jazeera Brand Warranty</p></a></li>
+                            <li> <a><i class="fas fa-sync"> </i>
+                                <p>30 Day Return Policy</p></a></li>
+                            <li><a>  <i class="fas fa-dollar-sign"> </i>
+                                <p>Cash on Delivery available                              </p></a></li>
+                          </ul>
+                        </div>
+                        <div class="product-switch"><span class="switch__lable">Color</span>
+                          <div class="switch__color"><span class="sw-brown"></span><span class="sw-black"></span><span class="sw-red"></span></div>
+                        </div>
+                        <div class="product-switch"><span class="switch__lable">Size</span>
+                          <div class="switch__size"><span class="size__item">sx</span><span class="size__item">s</span><span class="size__item">m</span><span class="size__item">l </span><span class="size__item">xl </span></div>
+                        </div>
+                        <hr>
+                        <div class="product-cart">
+                          <div class="cart__product-quantity">
+                            <div class="quantity">
+                              <input class="minus" type="button" value="-" data-min="1">
+                              <input class="qty" type="text" value="1">
+                              <input class="plus" type="button" value="+" data-max="1000">
+                            </div>
+                          </div>
+                          <div class="cart__product-btn">
+                            <button><i class="fas fa-shopping-cart">Add To Cart</i></button><a class="add__compare" href="#"><i class="fas fa-random"></i></a><a class="add__wishlist" href="#"><i class="far fa-heart"> </i></a>
+                          </div>
+                        </div>
+                        <hr>
+                        <ul class="product-meta">
+                          <li>SKU: <a href="#">BE45VGRT</a></li>
+                          <li>Category: <a href="#">Clothing</a></li>
+                          <li>Tags: <a href="#">Cloth, </a><a href="">printed</a></li>
+                        </ul>
+                        <div class="product-share"><span>Share:</span>
+                          <ul class="social_icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"> </i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fas fa-camera">              </i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Compare">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="ready-compare"></div>
+            <div class="compare">
+              <div class="container">
+                <div class="content">
+                  <div class="content__box">
+                    <div class="table-responsive">
+                      <table class="table-responsive__border">
+                        <tbody class="table"> 
+                          <tr class="table__images">
+                            <td class="images-title">Product Image</td>
+                            <td class="images"><img src="/images/layout/product_img1.jpg" alt=""></td>
+                            <td class="images"><img src="/images/layout/product_img2.jpg" alt=""></td>
+                            <td class="images"><img src="/images/layout/product_img3.jpg" alt=""></td>
+                          </tr>
+                          <tr class="table__title">
+                            <td class="title-text">Product Name</td>
+                            <td class="title-product"> <a href="#">Blue Dress For Woman</a></td>
+                            <td class="title-product"> <a href="#">Blue Dress For Woman</a></td>
+                            <td class="title-product"> <a href="#">Blue Dress For Woman        </a></td>
+                          </tr>
+                          <tr class="table__price">
+                            <td class="price-title">Price</td>
+                            <td class="price-number"><span class="price">$45.00</span></td>
+                            <td class="price-number"><span class="price">$45.00</span></td>
+                            <td class="price-number"><span class="price">$45.00        </span></td>
+                          </tr>
+                          <tr class="table__rating">
+                            <td class="rating-title">Rating</td>
+                            <td> 
+                              <div class="rating-wrap">
+                                <div class="rating">
+                                  <div class="product-rate"></div>
+                                </div>
+                                <div class="rate-number"> (21)</div>
+                              </div>
+                            </td>
+                            <td> 
+                              <div class="rating-wrap">
+                                <div class="rating">
+                                  <div class="product-rate"></div>
+                                </div>
+                                <div class="rate-number"> (21)</div>
+                              </div>
+                            </td>
+                            <td> 
+                              <div class="rating-wrap">
+                                <div class="rating">
+                                  <div class="product-rate"></div>
+                                </div>
+                                <div class="rate-number"> (21)    </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="table__add-to-cart">
+                            <td class="add-title">Add To Cart</td>
+                            <td class="add-btn"> <a href="#"> <i class="fas fa-shopping-cart"> </i> Add To Cart  </a></td>
+                            <td class="add-btn"> <a href="#"> <i class="fas fa-shopping-cart"> </i> Add To Cart   </a></td>
+                            <td class="add-btn"> <a href="#"> <i class="fas fa-shopping-cart"> </i> Add To Cart                                                   </a></td>
+                          </tr>
+                          <tr class="description">
+                            <td class="description__title">Description</td>
+                            <td class="description__text">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and </p>
+                            </td>
+                            <td class="description__text">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and </p>
+                            </td>
+                            <td class="description__text">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and         </p>
+                            </td>
+                          </tr>
+                          <tr class="table__color">
+                            <td class="color-title">Color</td>
+                            <td class="color"> 
+                              <div class="product_color_switch">
+                                <div class="color1"></div>
+                                <div class="color2"></div>
+                                <div class="color3"></div>
+                              </div>
+                            </td>
+                            <td class="color"> 
+                              <div class="product_color_switch">
+                                <div class="color1"></div>
+                                <div class="color2"></div>
+                                <div class="color3"></div>
+                              </div>
+                            </td>
+                            <td class="color"> 
+                              <div class="product_color_switch">
+                                <div class="color1"></div>
+                                <div class="color2"></div>
+                                <div class="color3">               </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="table__size">
+                            <td class="size-title">Sizes Available</td>
+                            <td class="size-text"> <span>S, M, L, XL</span></td>
+                            <td class="size-text"> <span>S, M, L, XL</span></td>
+                            <td class="size-text"> <span>S, M, L, XL        </span></td>
+                          </tr>
+                          <tr class="table__stock">
+                            <td class="stock-title">Item Availability</td>
+                            <td class="stock-text"> <span>In Stock</span></td>
+                            <td class="stock-text"> <span>In Stock</span></td>
+                            <td class="stock-text"> <span>In Stock        </span></td>
+                          </tr>
+                          <tr class="table__weight">
+                            <td class="weigth-title">Weight</td>
+                            <td class="weigth-text"> </td>
+                            <td class="weigth-text"> </td>
+                            <td class="weigth-text">  </td>
+                          </tr>
+                          <tr class="table__dimension">
+                            <td class="dimension-title">Dimensions</td>
+                            <td class="dimension-text">N/A</td>
+                            <td class="dimension-text">N/A</td>
+                            <td class="dimension-text">N/A</td>
+                          </tr>
+                          <tr class="table__remove">
+                            <td class="dimesion-title"></td>
+                            <td class="dimension-btn"><a href="#"><span>Remove</span><i class="fa fa-times"></i></a></td>
+                            <td class="dimension-btn"><a href="#"><span>Remove</span><i class="fa fa-times"></i></a></td>
+                            <td class="dimension-btn"><a href="#"><span>Remove</span><i class="fa fa-times">               </i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <button data-dismiss="modal" aria-label="close">x                       </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Slick JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- jquery.elevateZoom-3.0.8.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+    <!-- Ionicons JS-->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- Wow Js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Main Js-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

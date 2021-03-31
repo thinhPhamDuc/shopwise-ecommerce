@@ -1,0 +1,54 @@
+mixin product-item(display,sale, src, title, price, style)
+    .shop__product
+        span(style=display).pr__flash.bg-danger= sale
+        .shop__product-img
+            a(href="")
+                img(src= src, alt="")
+            .img__action
+                ul.img__action-list.pr_action_btn
+                    li.add-to-cart
+                        a(href="#") 
+                            i.fas.fa-shopping-cart 
+                            span Add To Cart
+                    li
+                        a(href="#" data-toggle="modal" data-target="#Compare")
+                            i.fas.fa-random
+                    li
+                        a(href="#" data-toggle="modal" data-target="#modal__product-1")
+                            i.fas.fa-search-plus
+                    li
+                        a(href="")
+                            i.far.fa-heart
+        .shop__product-info
+            h6.info__title= title
+            .info__price 
+                span.price= price
+                del $55.25
+                .info__price-sale
+                    span 35% Off
+            .info__rating
+                .rating
+                    .info__rating-rate(style= style)
+                span.rating_num (21)
+            .info__desc
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.
+            .info__switch   
+                .info__switch-color
+                    span.active(data-color="#87554B" style="background-color: rgb(135, 85, 75);")
+                    span(data-color="#333333" style="background-color: rgb(51, 51, 51);")
+                    span(data-color="#DA323F" style="background-color: rgb(218, 50, 63);")
+            .info__list 
+                ul.img__action-list.pr_action_btn
+                    li.add-to-cart
+                        a(href="") 
+                            i.fas.fa-shopping-cart 
+                            | Add To Cart
+                    li
+                        a(href="")
+                            i.fas.fa-random
+                    li
+                        a(href="")
+                            i.fas.fa-search-plus
+                    li
+                        a(href="")
+                            i.far.fa-heart

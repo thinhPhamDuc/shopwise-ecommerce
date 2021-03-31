@@ -1,0 +1,134 @@
+.topnav {
+  padding: 10px 0px;
+  border-bottom: 1px solid #eee;
+  &__logo {
+    display: flex;
+    @include breakpoint(768) {
+      display: block;
+    }
+    &-icon {
+      display: flex;
+      align-items: center;
+      @include breakpoint(768) {
+        justify-content: center;
+      }
+      .icon__list {
+        position: relative;
+        &-item {
+          padding: 5px 10px 5px 33px;
+          position: relative;
+          & a {
+            img {
+              width: 16px;
+              height: 16px;
+              border-radius: 100%;
+              position: absolute;
+              left: 10px;
+              top: 10px;
+            }
+            span {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .icon__list-none {
+        border: 1px solid #dee2e6;
+        opacity: 0;
+        position: absolute;
+        width: 135px;
+        background: white;
+        visibility: hidden;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+      .icon__curency-none {
+        border: 1px solid #dee2e6;
+        opacity: 0;
+        position: absolute;
+        background: white;
+        visibility: hidden;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+      .icon__curency {
+        position: relative;
+        padding-right: 10px;
+        &-item {
+          padding: 5px 10px;
+          @include breakpoint(768) {
+            padding-right: 10px;
+            margin: 0;
+          }
+          & span {
+            font-size: 13px;
+          }
+        }
+      }
+      .icon__phone {
+        & i {
+          margin-right: 10px;
+        }
+      }
+    }
+    &-account {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      @include breakpoint(768) {
+        justify-content: center;
+      }
+      & i {
+        margin-right: 6px;
+      }
+
+      .logo-account__compare {
+        padding: 2px 15px 2px 0px;
+        &:hover a {
+          color: #ff324d;
+          transition: all 0.3s;
+        }
+        font-size: 14px;
+      }
+      .logo-account__wishlist {
+        padding: 2px 15px 2px 0px;
+        &:hover a {
+          color: #ff324d;
+          transition: all 0.3s;
+        }
+        font-size: 14px;
+      }
+      .logo-account__user {
+        padding: 2px 15px 2px 0px;
+        &:hover a {
+          color: #ff324d;
+          transition: all 0.3s;
+        }
+        font-size: 14px;
+      }
+    }
+  }
+  & span {
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+  }
+  .button-bottom {
+    border: none;
+    background: white;
+    outline: none;
+  }
+  .button-curency {
+    border: none;
+    background: white;
+    outline: none;
+  }
+}
+.icon__list-none.show {
+  opacity: 1;
+  z-index: 998;
+  visibility: visible;
+}
+.icon__curency-none.menu {
+  opacity: 1;
+  z-index: 999;
+  visibility: visible;
+}

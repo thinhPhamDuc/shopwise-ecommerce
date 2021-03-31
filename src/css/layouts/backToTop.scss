@@ -1,0 +1,17 @@
+#back-to-top{
+    background-color: #171717;
+    bottom: 20px;
+    color: #ffffff;
+    display: none;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    z-index: 99;
+    a{
+    	color: inherit;
+    }
+}

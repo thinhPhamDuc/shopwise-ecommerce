@@ -1,0 +1,27 @@
+.banner__single {
+  background-color: #f4f9fc;
+  &-img {
+    margin-top: -40px;
+  }
+  &-text {
+    @include max-breakpoint(768) {
+      text-align: center;
+      padding: 40px 0;
+    }
+    .heading__single {
+      margin-bottom: 1rem;
+      span {
+        color: #ff324d;
+        margin-bottom: 10px;
+        display: block;
+      }
+      h2 {
+        font-weight: 700;
+        margin: 0;
+      }
+    }
+    h5 {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.info {
+    &.pb-70 {
+        padding-bottom: 70px;
+    }
+
+    &__box {
+        margin-bottom: 30px;
+
+        &.box-style1 {
+            text-align: center;
+            padding: 0 40px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 15%;
+                bottom: 15%;
+                right: 0;
+                width: 1px;
+                background-color: #ddd;
+
+                @include max-breakpoint (767) {
+                    display: none;
+                }
+            }
+
+            .info__box-icon i {
+                font-size: 46px;
+                line-height: 1;
+            }
+        }
+
+        &-icon {
+            margin-bottom: 15px;
+
+            i {
+                font-size: 30px
+            }
+        }
+
+        &-content {
+            p {
+                font-family: "Poppins",sans-serif;
+            }
+        }
+    }
+
+    [class*="col-"]:last-child .info__box.box-style1::before {
+        content: normal;
+    }
+}

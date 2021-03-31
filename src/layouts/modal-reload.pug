@@ -1,0 +1,27 @@
+#modal-reload.modal.fade
+    .modal-dialog.modal-dialog-centered.mw-800
+        .modal-content.border-0
+            .modal__reload 
+                button(type="button" data-dismiss="modal" aria-label="close").modal__button
+                    span(aria-hidden="true")
+                        <i class="fas fa-times"></i>
+                .row.mr-0
+                    .col-sm-5.p-0
+                        .modal__reload-img
+                            img(src="images/modal-loading/popup_img.jpg", alt="")
+                    .col-sm-7.p-0
+                        .modal__reload-title
+                            .reload-title__text
+                                h4 Subscribe and Get 25% Discount!
+                                h5 Subscribe to the newsletter to receive updates about new products.
+                            .reload-title__button
+                                form(method="post")
+                                    .form-group
+                                        input(name="email" placeholder="Enter Your Email" type="Email").form-control.rounded-0
+                                    .form-group
+                                        button.form-group__button Subscribe
+                            .reload-title__check
+                                .title__check-box
+                                    input(type="checkbox" name="checkbox").check-box__form
+                                    label(for="" type="checkbox") 
+                                        span Don't show this popup again!

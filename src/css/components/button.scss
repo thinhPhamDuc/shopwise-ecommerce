@@ -1,0 +1,36 @@
+.button_shop {
+  background-color: transparent;
+  padding: 12px 35px;
+  border: 0.3px solid #ff324d;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+
+  &:hover {
+    color: #ff324d;
+  }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ff324d;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    width: 51%;
+  }
+
+  &::after {
+    right: 0;
+    left: auto;
+  }
+  &:hover::before,
+  &:hover::after {
+    width: 0;
+  }
+}

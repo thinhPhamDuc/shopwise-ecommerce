@@ -1,0 +1,55 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    // Favicon
+    link(rel='shortcut icon' type='image/x-icon' href='images/layout/favicon.png')
+    // Bootstrap
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    // Font Awesome CSS
+    link(rel="stylesheet", href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css")
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap' rel='stylesheet')
+    // Owl Carousel CSS
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css')
+    // Slick CSS
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet")
+    // Animate CSS
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet")
+    // Main CSS
+    link(href="./css/main.css" rel="stylesheet")
+    title Shopwise
+  body
+    .wrapper
+      include ./layouts/loadingPage.pug
+      include ./layouts/modal-reload.pug
+      include ./layouts/header.pug
+      include ./layouts/menu.pug
+      block content
+      include ./layouts/footer.pug
+      include ./layouts/backToTop.pug
+      include ./layouts/modal.pug
+      include ./layouts/compare.pug
+    // Jquery
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js ')
+    //- script(src='https://code.jquery.com/jquery-1.12.4.js' integrity='sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=' crossorigin='anonymous')
+    // Bootstrap JS
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+    // Owl Carousel
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
+    // Slick JS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    // jquery.elevateZoom-3.0.8.min.js
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js')
+    // Ionicons JS
+    script(src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js')
+    // Wow Js
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
+    // Main Js
+    script(src='js/main.js')
+
+

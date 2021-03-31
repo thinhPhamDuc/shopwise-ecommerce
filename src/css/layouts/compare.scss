@@ -1,0 +1,434 @@
+.ready-compare{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1042;
+    overflow: hidden;
+    position: fixed;
+    background: #0b0b0b;
+    opacity: 0.8;
+}
+.compare{
+    overflow: hidden auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1043;
+    position: fixed;
+    outline: none ;
+    .content{
+        cursor: auto;   
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 auto;
+        text-align: left;
+        z-index: 1045;
+        &__box{
+            width: 100%;
+            padding: 30px 20px;
+            margin: 6px auto;
+            background-color: #fff;
+            position: relative;
+            .table-responsive{
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+                &__border{
+                    margin: 0;
+                    display: block;
+                    border: 0;
+                    width: 1050px;
+                    text-align: center;
+                    @include breakpoint(425) { width:990px; }
+                    .table {
+                        &__images{
+                            .images-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                            }
+                            .images{
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                        }
+                        &__title{
+                            .title-text{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                            .title-product{
+                                text-transform: capitalize;
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                                a{
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        &__price{
+                            border: 1px solid #dee2e6;
+                            .price-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                border: 1px solid #dee2e6;
+                            }
+                            .price-number{
+                                vertical-align: middle;
+                                width: 27%;
+                                color: #FF324D;
+                                font-weight: 600;
+                                border: 1px solid #dee2e6;
+                            }
+                        }
+                        &__rating{
+                            border: 1px solid #dee2e6;
+                            .rating-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                            }
+                            td{
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                                .rating-wrap{
+                                    display: flex;
+                                    justify-content: center;
+                                    .rating{
+                                        overflow: hidden;
+                                        position: relative;
+                                        height: 20px;
+                                        font-size: 12px;
+                                        width: 70px;
+                                        font-family: "Font Awesome 5 Free";
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        &::before{
+                                            font-size: 12px;
+                                            content: "\f005\f005\f005\f005\f005";
+                                            top: 0;
+                                            position: absolute;
+                                            left: 0;
+                                            float: left;
+                                            color: #F6BC3E;
+                                        }
+                                        .product-rate{
+                                            width: 80%;
+                                            overflow: hidden;
+                                            float: left;
+                                            top: 0;
+                                            left: 0;
+                                            position: absolute;
+                                            padding-top: 1.5em;
+                                            color: #F6BC3E;
+                                            &::before{
+                                                font-size: 12px;
+                                                content: "\f005\f005\f005\f005\f005";
+                                                top: 0;
+                                                position: absolute;
+                                                left: 0;
+                                                font-weight: 900;
+                                            }
+                                        }
+
+                                        
+                                    }
+                                    .rate-number {
+                                        text-align: center;
+                                        color: #212529;
+                                    }
+                                }
+                            }
+                        }
+                        &__add-to-cart{
+                            .add-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                            .add-btn{
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: 1.75rem;
+                                a{
+                                    cursor: pointer;
+                                    background-color: transparent;
+                                    border: 1px solid #FF324D;
+                                    color: #fff;
+                                    position: relative;
+                                    overflow: hidden;
+                                    z-index: 1;
+                                    line-height: normal;
+                                    padding: 12px 35px;
+                                    text-transform: capitalize;
+                                    transition: all 0.3s ease-in-out;
+                                    &:hover{
+                                        color: #FF324D ;
+                                        background-color: white;
+                                    }
+                                    &:hover::before{
+                                        width: 0;
+                                    }
+                                    &:hover::after{
+                                        width: 0;
+                                    }
+                                    &::before{
+                                        
+                                        content: "";
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        bottom: 0;
+                                        background-color: #FF324D;
+                                        z-index: -1;
+                                        transition: all 0.3s ease-in-out;
+                                        width: 51%;
+                                    }
+                                    &::after{
+                                        right: 0;
+                                        left: auto;
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        background-color: #FF324D;
+                                        z-index: -1;
+                                        transition: all 0.3s ease-in-out;
+                                        width: 51%;
+                                    }
+                                    .fas.fa-shopping-cart {
+                                        font-size: 16px;
+                                        margin-right: 5px;
+                                        vertical-align: middle;
+                                        line-height: 1;
+                                        &::before{
+                                            right: 0;
+                                            left: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .description{
+                            &__title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }   
+                            &__text{
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                                p{
+                                    margin: 0;
+                                    color: #687188;
+                                    line-height: 28px;
+                                }
+                            }
+                        }
+                        &__color{
+                            
+                            .color-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                            .color {
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                .product_color_switch{
+                                    .color1{
+                                        color: #87554B;
+                                        background-color: rgb(135, 85, 75);
+                                        transition: all 0.2s ease 0s;
+                                        height: 15px;
+                                        width: 15px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        margin: 5px;
+                                        position: relative;
+                                        cursor: pointer;
+                                        border-radius: 100%;
+                                    }
+                                    .color2{
+                                        color: #87554B;
+                                        background-color: rgb(135, 85, 75);
+                                        transition: all 0.2s ease 0s;
+                                        height: 15px;
+                                        width: 15px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        margin: 5px;
+                                        position: relative;
+                                        cursor: pointer;
+                                        border-radius: 100%;
+                                    }
+                                    .color3{
+                                        color: #87554B;
+                                        background-color: rgb(135, 85, 75);
+                                        transition: all 0.2s ease 0s;
+                                        height: 15px;
+                                        width: 15px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        margin: 5px;
+                                        position: relative;
+                                        cursor: pointer;
+                                        border-radius: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        &__size{
+                            .size-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                            .size-text {
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                                span{
+
+                                }
+                            }
+                        }
+                        &__stock{
+                            .stock-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                            .stock-text {
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                                span{
+                                    color: #388e3c;
+                                }
+                            }
+                        }
+                        &__weight{
+                            .weigth-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                            .weigth-text{
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                        }
+                        &__dimension{
+                            .dimension-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                            .dimension-text{
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                        }
+                        &__remove{
+                            .remove-title{
+                                width: 270px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                vertical-align: middle;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                            }
+                            .remove-btn{
+                                vertical-align: middle;
+                                width: 27%;
+                                border: 1px solid #dee2e6;
+                                padding: .75rem;
+                                a{
+                                    color: #FF0000;
+                                    span{
+
+                                    }
+                                    .fa.fa-times{
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            button {
+                color: #333;
+                width: 30px;
+                height: 30px;
+                line-height: normal;
+                position: absolute;
+                right: 0;
+                top: 0;
+                text-decoration: none;
+                text-align: center;
+                opacity: 0.65;
+                font-style: normal;
+                font-size: 28px;
+                font-family: Arial, Baskerville, monospace;
+                overflow: visible;
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+                display: block;
+                outline: none;
+                padding: 0;
+                z-index: 1046;
+                box-shadow: none;
+            
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+//- ----- Modal view ----- 
+.modal.fade#modal__product-1
+    .modal-dialog(roler="document").modal-dialog-centered.modal__product
+        .modal__content
+            button.close(type='button' data-dismiss='modal' aria-label='Close').btn__close-modal
+                span(aria-hidden='true') &times;
+            .modal-body
+                .container
+                    .row
+                        .col-lg-6.col-md-6
+                            .zoom-area
+                                img#zoompro(src="./images/modal-slider/product_img1.jpg" alt="zoom" data-zoom-image="./images/modal-slider/product_img1.jpg")
+                                #gallery.mt-30
+                                    a(href="#" data-image="./images/modal-slider/product_img1.jpg" data-zoom-image="./images/modal-slider/product_zoom_img1.jpg")
+                                        img(src="./images/modal-slider/product_img1.jpg" alt="zoom")
+                                    a(href="#" data-image="./images/modal-slider/product_img2.jpg" data-zoom-image="./images/modal-slider/product_zoom_img2.jpg")
+                                        img(src="./images/modal-slider/product_img2.jpg" alt="zoom")
+                                    a(href="#" data-image="./images/modal-slider/product_img3.jpg" data-zoom-image="./images/modal-slider/product_zoom_img3.jpg")
+                                        img(src="./images/modal-slider/product_img3.jpg" alt="zoom")
+                                    a(href="#" data-image="./images/modal-slider/product_img4.jpg" data-zoom-image="./images/modal-slider/product_zoom_img4.jpg")
+                                        img(src="./images/modal-slider/product_img4.jpg" alt="zoom")
+                        .col-lg-6.col-md-6.modal__product-view
+                            .product__detail
+                                .product__detail-title
+                                    h4.product-title 
+                                        a(href="#") Blue Dress For Woman
+                                    .product-price
+                                        span.price $45.00
+                                        del $55.25
+                                        .on-sale
+                                            span 35% Off  
+                                    .product-rating
+                                        .rating
+                                            .star-color
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                            .star
+                                                i.far.fa-star
+                                        span.rating-num (21)  
+                                    .product-desc
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.
+                                    .product-info
+                                        ul
+                                            li
+                                                a
+                                                    i.fas.fa-shield-alt 
+                                                    p 1 Year AL Jazeera Brand Warranty
+                                            li 
+                                                a
+                                                    i.fas.fa-sync 
+                                                    p 30 Day Return Policy
+
+                                            li
+                                                a   
+                                                    i.fas.fa-dollar-sign 
+                                                    p Cash on Delivery available                              
+                                    .product-switch
+                                        span.switch__lable Color
+                                        .switch__color
+                                            span.sw-brown
+                                            span.sw-black
+                                            span.sw-red
+                                    .product-switch
+                                        span.switch__lable Size
+                                        .switch__size
+                                            span.size__item sx
+                                            span.size__item s
+                                            span.size__item m
+                                            span.size__item l 
+                                            span.size__item xl 
+                                    hr
+                                    .product-cart
+                                        .cart__product-quantity
+                                            .quantity
+                                                input(type="button" value="-" data-min="1").minus
+                                                input(type="text" value="1").qty
+                                                input(type="button" value="+" data-max="1000" ).plus
+                                        .cart__product-btn
+                                            button
+                                                i.fas.fa-shopping-cart Add To Cart
+                                            a(href="#").add__compare
+                                                i.fas.fa-random
+                                            a(href="#").add__wishlist
+                                                i.far.fa-heart 
+                                    hr 
+                                    ul.product-meta
+                                        li SKU: 
+                                            a(href="#") BE45VGRT
+                                        li Category: 
+                                            a(href="#") Clothing
+                                        li Tags: 
+                                            a(href="#") Cloth, 
+                                            a(href="") printed
+                                    .product-share
+                                        span Share:
+                                        ul.social_icons
+                                            li
+                                                a(href="#")
+                                                    i.fab.fa-facebook-f
+                                            li
+                                                a(href="#")
+                                                    i.fab.fa-twitter 
+                                            li
+                                                a(href="#")
+                                                    i.fab.fa-google-plus-g
+                                            li
+                                                a(href="#")
+                                                    i.fab.fa-youtube
+                                            li
+                                                a(href="#")
+                                                    i.fas.fa-camera               
+
+
+
